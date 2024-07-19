@@ -101,7 +101,6 @@ const data = [
 
 const Hackers = () => {
   const { name } = useParams();
-  console.log("Name parameter:", name);
 
   const event = data.find((event) => event.name === name);
 

@@ -29,7 +29,6 @@ const Header = () => {
       setVisible(window.innerWidth <= 700);
       setOpen(false);
     };
-    console.log(window.innerWidth);
 
     window.addEventListener("resize", handleResize);
 

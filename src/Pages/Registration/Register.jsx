@@ -29,7 +29,7 @@ const Register = () => {
   };
 
   const handleSubmit = (e) => {
-    console.log(formData);
+    // console.log(formData);
     e.preventDefault();
     fetch("http://localhost:4000/register", {
       method: "POST",

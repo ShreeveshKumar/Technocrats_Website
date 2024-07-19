@@ -9,6 +9,7 @@ background-image: url('../../../public/Ellipse\ 14.png'), url('../../../public/E
 background-repeat: no-repeat ,no-repeat;
 background-position: 10% 50% , center top;
 background-size: 10% , 7%;
+overflow: hidden;
 
 }
 .topheading{
