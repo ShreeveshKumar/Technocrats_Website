@@ -13,27 +13,10 @@ import sarvinnec from "../../Assets/sarviniec.jpg";
 import sidinnovation from "../../Assets/sidinnovationday.jpg";
 import BVCOE from "../../Assets/BVCOEhack.jpg";
 import kim from "../../Assets/kimquiz.jpg";
-import abhinavintern from "../../Assets/abhinavintern.png"
-import dhruvintern from "../../Assets/dhruvintern.png"
+import abhinavintern from "../../Assets/abhinavintern.png";
+import dhruvintern from "../../Assets/dhruvintern.png";
+import styles from "./Achievment.module.css";
 
-const Icon1 = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="lightblue"
-      className="size-6"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
-      />
-    </svg>
-  );
-};
 const data = [
   {
     id: 0,
@@ -166,8 +149,8 @@ const data = [
 ];
 const Achievment = () => {
   return (
-    <div className="flex  align-middle place-content-center ">
-      <div className="flex flex-col ">
+    <div className={styles.achvcardgpa}>
+      <div className={styles.achvcardpa}>
         {data.map((pop) => {
           return (
             <AchievmentCard
@@ -183,20 +166,44 @@ const Achievment = () => {
   );
 };
 
+const Icon1 = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="size-2"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z"
+      />
+    </svg>
+  );
+};
+
 const AchievmentCard = ({ title, image, description, link }) => {
   return (
-    <a href={link} target="_blank" rel="noreferrer">
-      <div class="max-w-md rounded overflow-hidden shadow-lg bg-slate-800 p-5 m-5">
-        <div class="flex flex-row justify-between">
-          <div class="font-bold text-xl mb-2 text-blue-400">{title}</div>
-          <Icon1 />
-        </div>
-        <div className="flex align-middle place-content-center justify-center">
-          <img class="w-full" src={image} alt="Sunset in the mountains" />
-        </div>
-        <div class="text-gray-400 text-center ">{description}</div>
+    <div className={styles.achvcardwrapper}>
+      <div className={styles.achvtitlebox}>
+        <div className={styles.achvtitle}>{title}</div>
+
+        <a href={link} target="_blank">
+          <div className={styles.achvicon}>
+            <Icon1 />
+          </div>
+        </a>
       </div>
-    </a>
+
+      <div>
+        <img src={image} alt={title} />
+      </div>
+
+      <div className={styles.achvboxdesc}>{description}</div>
+    </div>
   );
 };
 

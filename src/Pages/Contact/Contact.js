@@ -28,7 +28,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className={styles.container}>
+    <div className={styles.messcontainer}>
       <img className={styles.contill} src={contactill} alt="illustration" />
       <div className={styles.input_container}>
         <div className={styles.testimonial_wrapper}>

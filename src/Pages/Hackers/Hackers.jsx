@@ -30,12 +30,11 @@ import ing2 from "../../Assets/Inga2.jpg";
 import ing3 from "../../Assets/Inga3.jpg";
 import ing4 from "../../Assets/Inga4.jpg";
 
-
-
 const data = [
   {
-    name:"Inauguration Ceremony",
-    description:"We are excited to introduce TECHNOCRATS, a club that embodies the essence of opportunities and continuous learning at its core.Our vision is to become a premier platform that nurtures technological innovation, creativity, and leadership among the KIETians. On the momentous day of 18th July 2023, we officially launched our club, graced by the esteemed presence of our Director, our Dean of Academics, HOD CSIT, and our esteemed faculty members.We take pride in the valuable guidance provided by our industry mentors, who bring expertise from leading tech companies. With their support, TECHNOCRATS aims to foster a community of tech enthusiasts, empowering each member to explore and excel in the world of technology.Let's embark on this exciting journey together, united by our passion for innovation and growth!",
+    name: "Inauguration Ceremony",
+    description:
+      "We are excited to introduce TECHNOCRATS, a club that embodies the essence of opportunities and continuous learning at its core.Our vision is to become a premier platform that nurtures technological innovation, creativity, and leadership among the KIETians. On the momentous day of 18th July 2023, we officially launched our club, graced by the esteemed presence of our Director, our Dean of Academics, HOD CSIT, and our esteemed faculty members.We take pride in the valuable guidance provided by our industry mentors, who bring expertise from leading tech companies. With their support, TECHNOCRATS aims to foster a community of tech enthusiasts, empowering each member to explore and excel in the world of technology.Let's embark on this exciting journey together, united by our passion for innovation and growth!",
     image1: ing1,
     image2: ing2,
     image3: ing3,
@@ -54,7 +53,8 @@ const data = [
   {
     name: "WEB 3 SANGAM",
     addon: "date here ",
-    description: "Immerse yourself in the captivating world of Web 3.0 at the Web 3 Sangam event, exploring the latest trends and developments in the decentralized web.Whether you're a developer, investor, or simply curious about the future of the internet, this event is for you. Let's shape the future of Web 3.0 together!t",
+    description:
+      "Immerse yourself in the captivating world of Web 3.0 at the Web 3 Sangam event, exploring the latest trends and developments in the decentralized web.Whether you're a developer, investor, or simply curious about the future of the internet, this event is for you. Let's shape the future of Web 3.0 together!t",
     image1: sangam2,
     image2: sangam2,
     image3: sangam1,
@@ -63,7 +63,8 @@ const data = [
   {
     name: "Technoverse",
     addon: "date here ",
-    description: "Reflecting on the inspiring Technoverse event on April 23rd, 2024! 🚀 We hosted distinguished speakers who shared invaluable insights into technology. Akshay Saini 🚀, a web development expert, motivated us with quotes that have shaped his journey, inspiring resilience and determination. 💪 Keerti Purswani emphasized the importance of communication skills in the tech industry, highlighting how effective communication fosters collaboration and innovation. 🗣️Supriya Purohit shared her personal journey, teaching us about perseverance and staying focused on goals despite adversity. 💡",
+    description:
+      "Reflecting on the inspiring Technoverse event on April 23rd, 2024! 🚀 We hosted distinguished speakers who shared invaluable insights into technology. Akshay Saini 🚀, a web development expert, motivated us with quotes that have shaped his journey, inspiring resilience and determination. 💪 Keerti Purswani emphasized the importance of communication skills in the tech industry, highlighting how effective communication fosters collaboration and innovation. 🗣️Supriya Purohit shared her personal journey, teaching us about perseverance and staying focused on goals despite adversity. 💡",
     image1: techno1,
     image2: techno2,
     image3: techno3,
@@ -72,12 +73,12 @@ const data = [
   {
     name: "Carrer-Guide",
     addon: "date here ",
-    description:"🌟 Club Spotlight: Inspiring Minds Through Technology 🌟 We are thrilled to spotlight Harveer Narwar, Shaiz Yousufzai, Radhika Gupta, and Panika Gupta, who have made a meaningful impact on young minds. Their recent visits to local schools aimed to inspire and educate students about the exciting world of technology.These visits were transformative, leaving lasting impressions on both the club members and students. They shared insights into the latest tech trends, sparking curiosity and passion. Their presence brought enthusiasm and created memorable moments.Their profound message emphasized that embracing technology is key to building a stronger, more prosperous nation. Believing in oneself and positively impacting others are the core values driving our club's mission.",
+    description:
+      "🌟 Club Spotlight: Inspiring Minds Through Technology 🌟 We are thrilled to spotlight Harveer Narwar, Shaiz Yousufzai, Radhika Gupta, and Panika Gupta, who have made a meaningful impact on young minds. Their recent visits to local schools aimed to inspire and educate students about the exciting world of technology.These visits were transformative, leaving lasting impressions on both the club members and students. They shared insights into the latest tech trends, sparking curiosity and passion. Their presence brought enthusiasm and created memorable moments.Their profound message emphasized that embracing technology is key to building a stronger, more prosperous nation. Believing in oneself and positively impacting others are the core values driving our club's mission.",
     image1: career1,
     image2: career2,
     image3: career3,
     image4: career4,
-    
   },
   {
     name: "Inaugration",
@@ -110,47 +111,25 @@ const Hackers = () => {
     return (
       <div>
         <div class="test_textevent">{event.name}</div>
-        <div className="flex flex-wrap flex-row lg:flex-row-reverse justify-around">
-          <div className=" w-64 lg:w-2/6 m-5 lg:m-0 ">
-            <img
-              src={event.image1}
-              alt={event.name}
-              className="rounded-md "
-            />
+        <div className="eventcardhead">
+          <div className="eventcardheading">
+            <img src={event.image1} alt={event.name} className="eventheadimage1" />
           </div>
-          <div className="text-white w-46 text-sm lg:text-lg p-5 lg:w-2/6  align-middle place-content-center">
-            {event.description}
-          </div>
+          <div className="eventcardheadtext">{event.description}</div>
         </div>
 
-        <div className="flex flex-wrap gap-5 justify-around m-5 ">
-          <div className="w-64 border-2 border-white rounded-md">
-            <img
-              src={event.image1}
-              className="rounded-md h-full w-full"
-              alt={event.name}
-            />
+        <div class="image-container">
+          <div class="image-item">
+            <img src={event.image1} class="rounded-md" alt="{event.name}" />
           </div>
-          <div className="w-64 border-2 border-white rounded-md">
-            <img
-              src={event.image2}
-              className="rounded-md h-full w-full"
-              alt={event.name}
-            />
+          <div class="image-item">
+            <img src={event.image2} class="rounded-md" alt="{event.name}" />
           </div>
-          <div className="w-64 border-2 border-white rounded-md">
-            <img
-              src={event.image3}
-              className="rounded-md h-full w-full"
-              alt={event.name}
-            />
+          <div class="image-item">
+            <img src={event.image3} class="rounded-md" alt="{event.name}" />
           </div>
-          <div className="w-64 border-2 border-white rounded-md">
-            <img
-              src={event.image4}
-              className="rounded-md h-full w-full"
-              alt={event.name}
-            />
+          <div class="image-item">
+            <img src={event.image4} class="rounded-md" alt="{event.name}" />
           </div>
         </div>
       </div>

@@ -21,31 +21,30 @@ import Nishika from "../../Assets/team/currenteam/nishika.png";
 import Shreya from "../../Assets/team/currenteam/shreya.png";
 import Rithik from "../../Assets/team/currenteam/hrithik_android.png";
 import Sahil from "../../Assets/team/currenteam/sahil.png";
-import Anoushka from "../../Assets/team/currenteam/anushka.png"
-import Sarvin from "../../Assets/team/currenteam/sarvin.png"
-import Shreevesh from "../../Assets/shreevesh.png"
-
+import Anoushka from "../../Assets/team/currenteam/anushka.png";
+import Sarvin from "../../Assets/team/currenteam/sarvin.png";
+import Shreevesh from "../../Assets/shreevesh.png";
 
 const founderteam = [
   {
     name: "Harveer Narwar",
-    role: "President",
+    role: " ",
     img: veer,
   },
   {
     name: "Prashant Rai",
-    role: "Co-Founder",
+    role: "",
     img: Prashant,
   },
   {
     name: "Raj Pandey",
-    role: "Community Manager",
+    role: "",
     img: raj,
   },
 
   {
     name: "Sanskriti Vats",
-    role: "General Secretary",
+    role: "",
     img: sanskriti,
   },
 ];
@@ -166,7 +165,6 @@ const Team = () => {
         ))}
       </div>
       <div className={styles.test_text}>Current Core Team </div>
-
 
       <div className={styles.team_container}>
         {currentteam.map((e) => (

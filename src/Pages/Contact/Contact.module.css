@@ -1,4 +1,4 @@
-.container{
+.messcontainer{
     display: flex;
     justify-content: space-around;
    margin-bottom: 200px;
@@ -95,7 +95,7 @@ text-align: center;
     .test_text{
         font-size: 20px;
     }
-    .container{
+    .messcontainer{
         display: flex;
         flex-direction: column-reverse;
         gap: 50px;
