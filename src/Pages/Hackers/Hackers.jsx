@@ -41,7 +41,7 @@ const data = [
     image4: ing4,
   },
   {
-    name: "Technocrats-Website",
+    name: "Technocrats Website",
     addon: "date here ",
     description:
       "On this day, we are thrilled to announce the launch of the Technocrats Club website! Our platform is dedicated to students passionate about web development, augmented reality, Android development, machine learning, and competitive programming. The website features a wealth of resources, including tutorials, project showcases, and a dedicated section for collaborative projects. Members can participate in forums, attend virtual classes, and stay updated with our events and hackathons. This launch marks a significant milestone in our journey to build a vibrant community of tech enthusiasts, committed to learning, innovation, and excellence.",
@@ -71,7 +71,7 @@ const data = [
     image4: techno4,
   },
   {
-    name: "Career-Guide",
+    name: "Career Guidance",
     addon: "date here ",
     description:
       "🌟 Club Spotlight: Inspiring Minds Through Technology 🌟 We are thrilled to spotlight Harveer Narwar, Shaiz Yousufzai, Radhika Gupta, and Panika Gupta, who have made a meaningful impact on young minds. Their recent visits to local schools aimed to inspire and educate students about the exciting world of technology.These visits were transformative, leaving lasting impressions on both the club members and students. They shared insights into the latest tech trends, sparking curiosity and passion. Their presence brought enthusiasm and created memorable moments.Their profound message emphasized that embracing technology is key to building a stronger, more prosperous nation. Believing in oneself and positively impacting others are the core values driving our club's mission.",

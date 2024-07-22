@@ -20,7 +20,7 @@ const data = [
     img:ing1,
   },
   {
-    name: "Technocrats-Website",
+    name: "Technocrats Website",
     addon: "date here ",
     img: websitelaunch1,
   },
@@ -35,7 +35,7 @@ const data = [
     img: techno1,
   },
   {
-    name: "Career-Guide",
+    name: "Career Guidance",
     addon: "date here ",
     img: career1,
   },
