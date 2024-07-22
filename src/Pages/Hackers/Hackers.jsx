@@ -71,7 +71,7 @@ const data = [
     image4: techno4,
   },
   {
-    name: "Carrer-Guide",
+    name: "Career-Guide",
     addon: "date here ",
     description:
       "🌟 Club Spotlight: Inspiring Minds Through Technology 🌟 We are thrilled to spotlight Harveer Narwar, Shaiz Yousufzai, Radhika Gupta, and Panika Gupta, who have made a meaningful impact on young minds. Their recent visits to local schools aimed to inspire and educate students about the exciting world of technology.These visits were transformative, leaving lasting impressions on both the club members and students. They shared insights into the latest tech trends, sparking curiosity and passion. Their presence brought enthusiasm and created memorable moments.Their profound message emphasized that embracing technology is key to building a stronger, more prosperous nation. Believing in oneself and positively impacting others are the core values driving our club's mission.",

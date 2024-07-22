@@ -35,7 +35,7 @@ const data = [
     img: techno1,
   },
   {
-    name: "Carrer-Guide",
+    name: "Career-Guide",
     addon: "date here ",
     img: career1,
   },

@@ -111,7 +111,7 @@ const Header = () => {
         {/* styles.nav_link */}
 
         {Open ? (
-          <a href="https://discord.gg/W8cVgj8x">
+          <a href="https://chat.whatsapp.com/Gi9OoTWITrnCPd6URsgQFj">
             {" "}
             <button
               className={`${Open ? styles.join_mobile : styles.close_menu}`}

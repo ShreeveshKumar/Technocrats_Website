@@ -17,15 +17,17 @@ const Footer = () => {
         <a href="/about">
           <div>ABOUT US</div>
         </a>
-        <a href="#domains_here">
-          <div>DOMAINS</div>
+        <a href="/resource">
+          <div>RESOURCES</div>
         </a>
       </div>
       <div className={styles.foter_blocks_2}>
-        <a href="#gallery_here">
-          <div>GALLERY</div>
+        <a href="/event">
+          <div>EVENTS</div>
         </a>
+        <a href="/achievement">
         <div>ACHIEVEMENTS</div>
+        </a>
 
         <a href="/team">
           <div>MEET OUR TEAM</div>

@@ -187,7 +187,7 @@ const Icon1 = () => {
 
 const AchievmentCard = ({ title, image, description, link }) => {
   return (
-    <div className={styles.achvcardwrapper}>
+    <div className={styles.achvcardwrapper} id="achievesection">
       <div className={styles.achvtitlebox}>
         <div className={styles.achvtitle}>{title}</div>
 
